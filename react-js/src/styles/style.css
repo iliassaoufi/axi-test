@@ -1,0 +1,130 @@
+h1,
+h2,
+h3,
+h4 {
+  color: var(--black);
+  font-family: "Unna", serif;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+p {
+  color: var(--gray);
+}
+/*********** input style *************/
+.input-with-icon {
+  border: 2px solid var(--blue-light);
+  padding: 5px;
+  margin: 10px auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  transition: all 0.3s ease-in-out;
+}
+.input-with-icon:hover,
+.input-with-icon:focus {
+  border-color: var(--blue-dark);
+}
+.input-with-icon i {
+  font-size: 1.4rem;
+  color: var(--blue);
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.input-with-icon input {
+  border: none;
+  background: none;
+  padding: 10px 0px;
+  min-width: 250px;
+  width: 100%;
+}
+.input-with-icon input:focus {
+  outline: none;
+}
+/***********************  btn***********************/
+
+.btn-pr {
+  padding: 12px 35px;
+  min-width: 130px;
+  background: var(--blue-dark);
+
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: var(--white);
+  letter-spacing: 1.1px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+.btn-pr:hover,
+.btn-pr:focus {
+  background: var(--blue-light);
+  color: var(--blue-dark);
+}
+
+/****/
+.btn-buy {
+  padding: 10px 30px;
+
+  background: var(--blue-light);
+  border: 2px solid var(--blue-light);
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: var(--blue);
+  letter-spacing: 1.1px;
+  font-weight: bold;
+
+  transition: all 0.3s ease-in-out;
+}
+.btn-buy:hover,
+.btn-buy:focus {
+  background: rgba(255, 255, 255, 0);
+  border: 2px solid var(--blue);
+  color: var(--blue-dark);
+  font-weight: bold;
+}
+
+/****/
+.btn-heart {
+  margin: 0;
+  padding: 0;
+}
+.btn-heart i {
+  margin: auto 10px;
+  font-size: 1.5rem;
+
+  color: var(--blue);
+  transition: all 0.3s ease-in-out;
+  font-weight: 300;
+}
+.btn-heart i:hover {
+  font-weight: 500;
+  color: var(--blue-dark) !important;
+}
+/************** animation *********/
+@keyframes anim-slide-up {
+  0% {
+    transform: translateY(100px);
+    opacity: 50%;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+}
+@keyframes anim-slide-right {
+  0% {
+    transform: translateX(40px);
+    opacity: 20%;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+}
+/************** bar ************/
+.bar-1 {
+  width: 50px;
+  height: 5px;
+  background: var(--blue-dark);
+  margin: 10px 0;
+}

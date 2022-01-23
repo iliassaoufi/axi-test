@@ -1,0 +1,14 @@
+{
+  "name": "json-server",
+  "version": "1.0.0",
+  "description": "fake data",
+  "main": "index.js",
+  "scripts": {
+    "json-server": "json-server --watch db.json --port 3004"
+  },
+  "author": "iliass",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}

@@ -1,0 +1,125 @@
+.hero-section {
+  background: rgb(0, 0, 0);
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+
+  overflow: hidden;
+}
+.hero {
+  width: 100%;
+  height: 80vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*************** hero ********************/
+.hero-img {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 00px;
+  border: 2px solid var(--gray);
+
+  position: absolute;
+}
+.hero-img img {
+  width: 250px;
+  height: 430px;
+  object-fit: cover;
+  object-position: center bottom;
+  border-radius: 00px;
+  filter: brightness(0.7);
+}
+/****/
+.hero-img-1 {
+  top: 100px;
+  left: 150px;
+}
+.hero-img-1 img {
+  position: relative;
+  top: 40px;
+  left: 50px;
+  animation: anim-img-1 1s ease;
+}
+/****/
+.hero-img-2 {
+  bottom: 50px;
+  right: 150px;
+}
+.hero-img-2 img {
+  position: relative;
+  top: -40px;
+  left: -50px;
+  animation: anim-img-2 1.5s ease;
+}
+
+/********** hero content ************/
+.hero-content {
+  z-index: 1;
+  width: 50%;
+  text-align: center;
+  animation: anim-slide-up 0.9s ease;
+}
+.hero-content h1 {
+  font-family: "Pacifico", serif;
+  font-size: 82px;
+  font-weight: 400;
+  color: var(--white);
+  line-height: 1.2;
+}
+.hero-content button {
+  margin: auto;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+}
+.hero-content button i {
+  font-size: 20px;
+  margin-left: 5px;
+}
+/********************* for mobile ****************/
+
+@media only screen and (max-width: 900px) {
+  .hero {
+    height: 600px;
+  }
+  .hero-content {
+    width: 85%;
+  }
+  .hero-content h1 {
+    line-height: 1;
+  }
+  .hero-img img {
+    filter: brightness(0.4);
+  }
+}
+
+/**************** animation ************/
+@keyframes anim-img-1 {
+  0% {
+    top: 0px;
+    left: 0px;
+    filter: brightness(0.2);
+  }
+  100% {
+    top: 40px;
+    left: 50px;
+    filter: brightness(0.7);
+  }
+}
+
+@keyframes anim-img-2 {
+  0% {
+    top: 0px;
+    left: 0px;
+    filter: brightness(0.2);
+  }
+  100% {
+    top: -40px;
+    left: -50px;
+    filter: brightness(0.7);
+  }
+}

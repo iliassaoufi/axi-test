@@ -1,0 +1,23 @@
+/**********pagination **************/
+.pagination {
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  z-index: 1;
+}
+.pagination button {
+  border: 1px solid var(--blue);
+
+  font-weight: 700;
+  padding: 5px 11px;
+  margin: auto 10px;
+  color: var(--blue);
+  transition: all 0.3s ease-in-out;
+  border-radius: 0px;
+}
+/* .pagination button:hover {
+  border: 2px solid var(--blue);
+  font-weight: 700;
+} */

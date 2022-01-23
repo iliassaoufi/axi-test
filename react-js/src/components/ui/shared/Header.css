@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  margin: auto 10%;
+  padding: 15px 0;
+}
+.header button i {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 300;
+}
+.main-nav {
+  flex: 1;
+}
+.logo {
+  flex: 1;
+  font-family: "Unna", serif;
+  font-size: 42px;
+  letter-spacing: 5px;
+  color: var(--blue-light);
+  text-align: center;
+}
+.logo span {
+  color: var(--blue-dark);
+  font-size: 82px;
+  line-height: 0;
+}
+.short-nav {
+  flex: 1;
+  text-align: end;
+}
+.logout {
+  color: white;
+  margin: auto 20px;
+}
+.logout i {
+  margin: auto 5px;
+}
+
+/***********/
+
+@media only screen and (max-width: 900px) {
+  .header {
+    margin: auto 2%;
+    padding: 15px;
+  }
+  .logo {
+    flex: 5;
+  }
+  .short-nav {
+    flex: 3;
+  }
+}

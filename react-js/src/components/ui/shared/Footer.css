@@ -1,0 +1,70 @@
+.footer {
+  background: var(--black);
+  padding: 70px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer > div {
+  margin: 10px 40px;
+  text-align: start;
+}
+.footer h3 {
+  color: var(--blue-light);
+  font-size: 24px;
+  font-family: "Unna", serif;
+  letter-spacing: 1.3px;
+  margin: 15px 0;
+}
+
+/*****************************/
+.footer-about {
+  flex: 1;
+  margin: auto;
+  animation: anim-slide-up 0.6s ease;
+}
+.footer-about p {
+  font-size: 14px;
+  text-align: justify;
+  margin-top: 10px;
+  color: var(--blue);
+}
+.footer-subscribe {
+  flex: 1;
+  animation: anim-slide-up 0.8s ease;
+}
+.footer-subscribe input {
+  color: white;
+}
+/********************************/
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(2, 1, 15);
+  padding: 15px 0;
+}
+.footer-nav a {
+  margin: auto 10px;
+  color: var(--blue);
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.footer-nav a:hover {
+  color: var(--blue-light);
+}
+/**************** mobile ***************/
+@media only screen and (max-width: 900px) {
+  .footer {
+    flex-direction: column;
+    padding: 40px 5%;
+  }
+  .footer > div {
+    text-align: center;
+    margin: 15px 20px;
+  }
+  .footer-about p {
+    text-align: center;
+  }
+}
